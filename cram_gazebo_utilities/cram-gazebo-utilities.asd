@@ -30,16 +30,15 @@
   :license "BSD"
   :description "CRAM gazebo utilities"
 
-  :depends-on (cram-roslisp-common
-               cram-language
-               cram-reasoning
-               process-modules
+  :depends-on (cram-language
+               cram-prolog
+               cram-process-modules
                cram-utilities
-               cram-plan-knowledge
-               designators
+               cram-plan-library
+               cram-designators
                designators-ros
-               actionlib
-               semantic-map-cache
+               ;;actionlib
+               ;;semantic-map-cache
                ;; vision_msgs-msg
                ;; vision_srvs-srv
                std_msgs-msg
@@ -48,7 +47,7 @@
                cram-plan-failures
                gazebo_msgs-msg
                gazebo_msgs-srv
-               cl-semantic-map-utils
+               cram-semantic-map-utils
                cram-plan-library)
   :components
   ((:module "src"
